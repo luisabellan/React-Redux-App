@@ -31,6 +31,4 @@ export const jokesReducer = (state = initialState, action) => {
   }
 };
 
-// fetching
-// feteched
-// errorFetching
+
