@@ -142,34 +142,38 @@ html {
 
     header {
       
-        color: #d3761f;
-        font-size: 2rem;
-        margin: 3rem auto;
+        color: #17e2e9;
+        font-size: 1rem;
+        margin: 3rem auto 4rem  auto;
         text-align: center;
         height: 5vh;
-     /*  h1.title {
-       
+       h1.title {
+       font-size: 1rem;
+       @media (min-width: 300px){
+        font-size: 3.4rem;
+
+       }
       }
-      .title {
-      } */
+     
     }
 
   
     .jokes {
       .card {
-        background-color: rgb(6, 73, 39);
+        background-color: rgb(15, 75, 124);
         padding: 2rem;
         margin: 2rem;
         border-radius: 2rem;
 
         span {
+          color:rgb(196, 240, 229);
         }
           p.setup {
             font-size: 1.3rem;
-            color: #d3761f;
+            color: #95dd22e5;
             font-weight: 600;
             height: 5vh;
-            margin: 0 auto;
+            margin: 3rem auto;
             text-align: center;
             margin: 2rem auto;
             text-align: center;
@@ -177,10 +181,10 @@ html {
           }
           p.punchline {
             font-size: 1.3rem;
-            color: rgb(228, 198, 28);
+            color:#d45004;
             font-weight: 600;
             height: 5vh;
-            margin: 2rem auto;
+            margin: 3rem auto;
             text-align: center;
             text-align: center;
             padding: 0.5rem 2rem;
@@ -198,7 +202,7 @@ html {
     }
 
     .copyright {
-      color: rgba(6, 92, 72, 0.863);
+      color: rgba(137, 170, 240, 0.863);
       padding: 2rem;
     }
   }

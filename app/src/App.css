@@ -155,31 +155,40 @@ html .app-wrapper {
 }
 
 html .app-wrapper header {
-  color: #d3761f;
-  font-size: 2rem;
-  margin: 3rem auto;
+  color: #17e2e9;
+  font-size: 1rem;
+  margin: 3rem auto 4rem  auto;
   text-align: center;
   height: 5vh;
-  /*  h1.title {
-       
-      }
-      .title {
-      } */
+}
+
+html .app-wrapper header h1.title {
+  font-size: 1rem;
+}
+
+@media (min-width: 300px) {
+  html .app-wrapper header h1.title {
+    font-size: 3.4rem;
+  }
 }
 
 html .app-wrapper .jokes .card {
-  background-color: #064927;
+  background-color: #0f4b7c;
   padding: 2rem;
   margin: 2rem;
   border-radius: 2rem;
 }
 
+html .app-wrapper .jokes .card span {
+  color: #c4f0e5;
+}
+
 html .app-wrapper .jokes .card p.setup {
   font-size: 1.3rem;
-  color: #d3761f;
+  color: #95dd22e5;
   font-weight: 600;
   height: 5vh;
-  margin: 0 auto;
+  margin: 3rem auto;
   text-align: center;
   margin: 2rem auto;
   text-align: center;
@@ -188,10 +197,10 @@ html .app-wrapper .jokes .card p.setup {
 
 html .app-wrapper .jokes .card p.punchline {
   font-size: 1.3rem;
-  color: #e4c61c;
+  color: #d45004;
   font-weight: 600;
   height: 5vh;
-  margin: 2rem auto;
+  margin: 3rem auto;
   text-align: center;
   text-align: center;
   padding: 0.5rem 2rem;
@@ -207,7 +216,7 @@ html .app-wrapper h4 {
 }
 
 html .app-wrapper .copyright {
-  color: rgba(6, 92, 72, 0.863);
+  color: rgba(137, 170, 240, 0.863);
   padding: 2rem;
 }
 /*# sourceMappingURL=App.css.map */

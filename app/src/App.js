@@ -10,6 +10,7 @@ import {
   faHatCowboy
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Card from './components/Card'
 
 library.add(fab, faCheckSquare, faCoffee);
 
@@ -22,7 +23,7 @@ class App extends Component {
     return (
       <div className="app-wrapper">
         <header>
-          <h1 className="title">Welcome to Jokes</h1>
+          <h1 className="title">Random Jokes</h1>
         </header>
         {this.props.fetchingJokes ? (
           <h3>
@@ -30,21 +31,25 @@ class App extends Component {
             <FontAwesomeIcon icon={faHatCowboy} />
           </h3>
         ) : (
-          <div className="jokes card">
-            {this.props.jokes.map(joke => {
-              return (
-                <div key={Date.now() * Math.random()} className="card is-child">
-                  <span className="tag is-danger ">{joke.type}</span>
+            <div className="jokes card">
+              {this.props.jokes.map(joke => {
+                return (
+                  <Card
+                    key={Date.now() * Math.random()}
+                    joke={joke}
+                  />
+                );
 
-                  <p className="setup">{joke.setup}</p>
-                  <p className="punchline">{joke.punchline}</p>
-                </div>
-              );
-            })}
-          </div>
-        )}
+
+              })}
+            </div>
+          )
+        }
         {this.props.error !== "" ? <h4>{this.props.error}</h4> : null}
-      </div>
+        <p className="copyright">
+          Copyright {new Date().getFullYear()} - Luis Abellan
+        </p>
+      </div >
     );
   }
 }
