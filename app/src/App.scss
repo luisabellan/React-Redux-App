@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: rgb(6, 41, 73);
+    
+    padding: 2rem;
+    color: white;
+
+    header {
+      
+        color: #17e2e9;
+        font-size: 1rem;
+        margin: 3rem auto 4rem  auto;
+        text-align: center;
+        height: 5vh;
+       h1.title {
+       font-size: 1rem;
+       @media (min-width: 300px){
+        font-size: 3.4rem;
+
+       }
+      }
+     
+    }
+
+  
+    .jokes {
+      .card {
+        background-color: rgb(15, 75, 124);
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 2rem;
+
+        span {
+          color:rgb(196, 240, 229);
+        }
+          p.setup {
+            font-size: 1.3rem;
+            color: #95dd22e5;
+            font-weight: 600;
+            height: 5vh;
+            margin: 3rem auto;
+            text-align: center;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 0.5rem 2rem;
+          }
+          p.punchline {
+            font-size: 1.3rem;
+            color:#d45004;
+            font-weight: 600;
+            height: 5vh;
+            margin: 3rem auto;
+            text-align: center;
+            text-align: center;
+            padding: 0.5rem 2rem;
+          }
+        
+      }
+    }
+    h4 {
+      font-size: 1.3rem;
+      color: #f8faf8;
+      font-weight: 600;
+      height: 5vh;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .copyright {
+      color: rgba(137, 170, 240, 0.863);
+      padding: 2rem;
+    }
+  }
+}

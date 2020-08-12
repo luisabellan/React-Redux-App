@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html .app-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: #062949;
+  padding: 2rem;
+  color: white;
+}
+
+html .app-wrapper header {
+  color: #17e2e9;
+  font-size: 1rem;
+  margin: 3rem auto 4rem  auto;
+  text-align: center;
+  height: 5vh;
+}
+
+html .app-wrapper header h1.title {
+  font-size: 1rem;
+}
+
+@media (min-width: 300px) {
+  html .app-wrapper header h1.title {
+    font-size: 3.4rem;
+  }
+}
+
+html .app-wrapper .jokes .card {
+  background-color: #0f4b7c;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
+}
+
+html .app-wrapper .jokes .card span {
+  color: #c4f0e5;
+}
+
+html .app-wrapper .jokes .card p.setup {
+  font-size: 1.3rem;
+  color: #95dd22e5;
+  font-weight: 600;
+  height: 5vh;
+  margin: 3rem auto;
+  text-align: center;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+
+html .app-wrapper .jokes .card p.punchline {
+  font-size: 1.3rem;
+  color: #d45004;
+  font-weight: 600;
+  height: 5vh;
+  margin: 3rem auto;
+  text-align: center;
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+
+html .app-wrapper h4 {
+  font-size: 1.3rem;
+  color: #f8faf8;
+  font-weight: 600;
+  height: 5vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+html .app-wrapper .copyright {
+  color: rgba(137, 170, 240, 0.863);
+  padding: 2rem;
+}
+/*# sourceMappingURL=App.css.map */
